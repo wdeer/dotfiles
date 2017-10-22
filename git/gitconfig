@@ -127,3 +127,4 @@
   path = .gitconfig.user
 [user]
 	name = wdeer
+	email = wesley.deer@gmail.com
