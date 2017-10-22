@@ -33,7 +33,7 @@ function kp() {
   return;
 }
 
-
+alias cat='ccat --bg=light --color=always -G String="_teal_"'
 
 # Show human friendly numbers and colors
 alias df='df -h'

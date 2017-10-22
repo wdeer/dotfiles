@@ -10,6 +10,9 @@ function removetag() {
 	git tag -d $@ && git push origin :refs/tags/$@
 }
 
+alias git-diff='git status'
+alias gdiff='git status'
+
 alias gs='git status'
 alias gstsh='git stash'
 alias gst='git stash'
