@@ -1,3 +1,11 @@
+
+
+
+
+alias use_php53="brew unlink php54 && brew unlink php55 && brew unlink php53 && brew link php53"
+alias use_php54="brew unlink php53 && brew unlink php55 && brew unlink php54 && brew link php54"
+alias use_php55="brew unlink php53 && brew unlink php54 && brew unlink php55 && brew link php55"
+
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias frick='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias frack='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
@@ -44,3 +52,16 @@ function wppack() {
 
 alias startheadphones='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.headphones.plist'
 alias upgrade-beets='pip install -U beets requests discogs-client munkres unidecode jellyfish musicbrainzngs mutagen enum34 pyyaml six oauthlib'
+
+
+function chngphp() {
+v=$( brew list | grep php )
+if [[ "$v" != "$@" ]];then
+ echo "$v"
+fi;
+
+# brew list | grep php  | while read NAME
+#  do echo "$NAME"
+# done;
+
+}

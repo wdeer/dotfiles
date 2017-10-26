@@ -70,6 +70,8 @@ alias opn='open .'
 
 alias replacetext='find ./ -type f -exec sed -i "" -e "s/$1/$2/g" {} \;'
 alias findfiles='find . -type f -name "$@"'
+alias findfile='find . -type f -name "$@"'
+alias finddir='find . -type d -name "$@"'
 alias findfilesandremove='find . -type f -name "$@" -exec rm -f {} \;'
 
 function replaceword() {

@@ -1,3 +1,6 @@
+alias openfortivpn="sudo openfortivpn -c ~/.openfortivpn/config"
+alias tpvpn="sudo openfortivpn -c ~/.openfortivpn/config"
+
 alias MYKEY='cat ~/.ssh/id_rsa.pub'
 alias id_rsa='cat ~/.ssh/id_rsa.pub'
 
