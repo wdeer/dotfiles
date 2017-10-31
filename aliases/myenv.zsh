@@ -19,7 +19,7 @@ alias MYZSH='cat "~/.zsh$rc"'
 # zsh profile editing
 alias ze='vim ~/.zshrc'
 
-
+alias rackham-vnc='ssh -L 5901:127.0.0.1:5901 rackham@rackham.local "vncserver :1"'
 
 # EDIT some key files
 alias vhosts='open /private/etc/apache2/vhosts'
